@@ -1,0 +1,33 @@
+Disassembly Listing for test1
+Generated From:
+C:/Users/Alina/Desktop/PIC/test1.X/dist/default/debug/test1.X.debug.elf
+Jan 14, 2021 3:01:17 PM
+
+---  C:/Users/Alina/Desktop/PIC/test1.X/test1.s  --------------------------------------------------------
+                                                  1:     ; The following code will be placed in the executable
+                                                  2:     ; code section.
+                                                  3:     .text
+                                                  4:     .global __reset
+                                                  5:     __reset:
+                                                  6:     LOOP:
+0002B8  808101     MOV 0x1020, W1                 7:      mov 0x1020, w1 ;INW0=7fff
+0002BA  808112     MOV 0x1022, W2                 8:      mov 0x1022, w2 ;INW1=0001
+0002BC  408182     ADD W1, W2, W3                 9:      add w1,w2,w3 ;w3=8000, OV=1
+0002BE  410402     ADD W2, W2, W8                 10:     add w2,w2,w8 ;w8=2 , OV=0
+0002C0  418203     ADD W3, W3, W4                 11:     add w3,w3,w4 ;w4=0000, OV=1
+0002C2  418402     ADD W3, W2, W8                 12:     add w3,w2,w8 ; OV=0
+0002C4  510283     SUB W2, W3, W5                 13:     sub w2,w3,w5 ;w5=8001, OV=1
+0002C6  508402     SUB W1, W2, W8                 14:     sub w1,w2,w8 ; OV=0
+0002C8  528381     SUB W5, W1, W7                 15:     sub w5,w1,w7 ;w6=0002, OV=1
+0002CA  608282     AND W1, W2, W5                 16:     and w1,w2,w5 ;OV nemodificat
+0002CC  708302     IOR W1, W2, W6                 17:     ior w1,w2,w6 ;OV nemodificat
+0002CE  888121     MOV W1, 0x1024                 18:     mov w1, 0x1024
+0002D0  888122     MOV W2, 0x1024                 19:     mov w2, 0x1024
+0002D2  888123     MOV W3, 0x1024                 20:     mov w3, 0x1024
+0002D4  888124     MOV W4, 0x1024                 21:     mov w4, 0x1024
+0002D6  888125     MOV W5, 0x1024                 22:     mov w5, 0x1024
+0002D8  30FFEF     BRA OV, 0x2B8                  23:     bra OV, LOOP
+                                                  24:    
+                                                  25:    
+                                                  26:    .end
+                                                  27:    

@@ -1,0 +1,31 @@
+Disassembly Listing for test1
+Generated From:
+C:/Users/Alina/Desktop/PIC/test1.X/dist/default/debug/test1.X.debug.elf
+Jan 11, 2021 9:00:39 PM
+
+---  C:/Users/Alina/Desktop/PIC/test1.X/test1.s  --------------------------------------------------------
+                                                  1:     ; The following code will be placed in the executable
+                                                  2:     ; code section.
+                                                  3:     .text
+                                                  4:     .global __reset
+                                                  5:     __reset:
+                                                  6:     LOOP:
+0002B8  808101     MOV 0x1020, W1                 7:      mov 0x1020, w1 ;INW0=7fff
+0002BA  808112     MOV 0x1022, W2                 8:      mov 0x1022, w2 ;INW1=0001
+0002BC  408182     ADD W1, W2, W3                 9:      add w1,w2,w3 ;8000, N=1
+0002BE  418183     ADD W3, W3, W3                 10:     add w3,w3,w3 ;0000, N=0
+0002C0  518202     SUB W3, W2, W4                 11:     sub w3,w2,w4 ;ffff, N=1
+0002C2  520184     SUB W4, W4, W3                 12:     sub w4,w4,w3 ;0000, N=0
+0002C4  620284     AND W4, W4, W5                 13:     and w4,w4,w5 ;ffff, N=1
+0002C6  620282     AND W4, W2, W5                 14:     and w4,w2,w5 ;0001, N=0
+0002C8  720301     IOR W4, W1, W6                 15:     ior w4,w1,w6 ;ffff, N=1
+0002CA  708301     IOR W1, W1, W6                 16:     ior w1,w1,w6 ;7fff, N=0
+0002CC  888121     MOV W1, 0x1024                 17:     mov w1, 0x1024
+0002CE  888122     MOV W2, 0x1024                 18:     mov w2, 0x1024
+0002D0  888123     MOV W3, 0x1024                 19:     mov w3, 0x1024
+0002D2  888124     MOV W4, 0x1024                 20:     mov w4, 0x1024
+0002D4  888125     MOV W5, 0x1024                 21:     mov w5, 0x1024
+0002D6  888126     MOV W6, 0x1024                 22:     mov w6, 0x1024
+0002D8  37FFEF     BRA 0x2B8                      23:     bra LOOP
+                                                  24:    .end
+                                                  25:    

@@ -1,0 +1,12 @@
+[Inputs]
+Branch
+Z
+C
+N
+OV
+=PC[23:0]=
+=Offset[15:0]=
+=BranchT[2:0]=
+[Outputs]
+=New_PC[23:0]=
+[BiDir]

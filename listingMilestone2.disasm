@@ -1,0 +1,50 @@
+Disassembly Listing for test1
+Generated From:
+C:/Users/Alina/Desktop/PIC/test1.X/dist/default/debug/test1.X.debug.elf
+Nov 28, 2020 2:50:50 PM
+
+---  C:/Users/Alina/Desktop/PIC/test1.X/test1.s  --------------------------------------------------------
+                                                  1:     ; The following code will be placed in the executable
+                                                  2:     ; code section.
+                                                  3:     .text
+                                                  4:     .global __reset
+                                                  5:     __reset:
+                                                  6:     main:
+0002B8  808101     MOV 0x1020, W1                 7:         mov     0x1020, w1  ;INW0=aaab -- valori introduse la portul de intrare
+0002BA  808112     MOV 0x1022, W2                 8:         mov     0x1022, w2  ;INW1=5555
+0002BC  408182     ADD W1, W2, W3                 9:         add     w1,w2,w3    ;operatia de adunare intre w1 si w2 si se salveaza in w3
+0002BE  888123     MOV W3, 0x1024                 10:        mov     w3, 0x1024  ;afisarea unei valori din registru in portul de iesire
+0002C0  300009     BRA OV, 0x2D4                  11:        bra     OV,shift    ;daca se obtine overflow facem o shiftare la stang
+0002C2  508202     SUB W1, W2, W4                 12:        sub     w1,w2,w4    ;operatia de scadere intre w1 si w2 si se salveaza in w4
+0002C4  888124     MOV W4, 0x1024                 13:        mov     w4, 0x1024
+0002C6  32000C     BRA Z, 0x2E0                   14:        bra     Z, addconst ;daca se obtine zero se adauga o valoare constanta
+0002C8  608282     AND W1, W2, W5                 15:        and     w1,w2,w5    ;operatia and intre w1 si w2 si se salveaza in w5
+0002CA  888125     MOV W5, 0x1024                 16:        mov     w5, 0x1024
+0002CC  31000C     BRA C, 0x2E6                   17:        bra     C, subbconst;daca se obtine un carry se scade un nr constant
+0002CE  708302     IOR W1, W2, W6                 18:        ior     w1,w2,w6    ;operatia or intre w1 si w2 si se salveaza in w6
+0002D0  888126     MOV W6, 0x1024                 19:        mov     w6, 0x1024
+0002D2  37FFF2     BRA 0x2B8                      20:        bra     main        ; operatie de jump neconditionat catre main
+                                                  21:        
+                                                  22:    shift:
+0002D4  DD1BCC     SL W3, #12, W7                 23:        sl      w3, #12, w7 ; shifteaza la stanga cu #12
+0002D6  888127     MOV W7, 0x1024                 24:        mov     w7, 0x1024
+0002D8  37FFEF     BRA 0x2B8                      25:        bra     main
+                                                  26:        
+                                                  27:    setmem:
+0002DA  EB8200     SETM W4                        28:        setm    w4          ;se trece in registrul w4 valoarea FFFF
+0002DC  888124     MOV W4, 0x1024                 29:        mov     w4, 0x1024
+0002DE  37FFEC     BRA 0x2B8                      30:        bra     main
+                                                  31:        
+                                                  32:    addconst:
+0002E0  B08FF5     ADDC #0xFF, W5                 33:        addc    #0xFF, w5   ;se aduna continutul lui w5 cu FF si C
+0002E2  888125     MOV W5, 0x1024                 34:        mov     w5, 0x1024
+0002E4  37FFE9     BRA 0x2B8                      35:        bra     main
+                                                  36:        
+                                                  37:    subbconst:
+0002E6  5A0268     SUBB W4, #0x8, W4              38:        subb    w4, #0x8, w4;se scade 8 si C din continutul w4 
+0002E8  888124     MOV W4, 0x1024                 39:        mov     w4, 0x1024  
+0002EA  33FFF7     BRA N, 0x2DA                   40:        bra     N, setmem   ;daca se obtine numar negativ se trece in registru
+                                                  41:                            ;valoarea 0xFFFF
+0002EC  37FFE5     BRA 0x2B8                      42:        bra     main
+                                                  43:    .end
+                                                  44:    

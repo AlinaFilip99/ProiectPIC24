@@ -1,0 +1,30 @@
+Disassembly Listing for test1
+Generated From:
+C:/Users/Alina/Desktop/PIC/test1.X/dist/default/debug/test1.X.debug.elf
+Jan 14, 2021 2:09:59 PM
+
+---  C:/Users/Alina/Desktop/PIC/test1.X/test1.s  --------------------------------------------------------
+                                                  1:     ; The following code will be placed in the executable
+                                                  2:     ; code section.
+                                                  3:     .text
+                                                  4:     .global __reset
+                                                  5:     __reset:
+                                                  6:     LOOP:
+0002B8  808101     MOV 0x1020, W1                 7:      mov 0x1020, w1 ;INW0=ffff
+0002BA  808112     MOV 0x1022, W2                 8:      mov 0x1022, w2 ;INW1=0001
+0002BC  408182     ADD W1, W2, W3                 9:      add w1,w2,w3 ;0000, C=1
+0002BE  608282     AND W1, W2, W5                 10:     and w1,w2,w5 ;C nemodificat
+0002C0  418182     ADD W3, W2, W3                 11:     add w3,w2,w3 ;0001, C=0
+0002C2  518202     SUB W3, W2, W4                 12:     sub w3,w2,w4 ;0000, C=1
+0002C4  708302     IOR W1, W2, W6                 13:     ior w1,w2,w6 ;C nemodificat
+0002C6  888121     MOV W1, 0x1024                 14:     mov w1, 0x1024
+0002C8  888122     MOV W2, 0x1024                 15:     mov w2, 0x1024
+0002CA  888123     MOV W3, 0x1024                 16:     mov w3, 0x1024
+0002CC  888124     MOV W4, 0x1024                 17:     mov w4, 0x1024
+0002CE  888125     MOV W5, 0x1024                 18:     mov w5, 0x1024
+0002D0  888126     MOV W6, 0x1024                 19:     mov w6, 0x1024
+0002D2  31FFF2     BRA C, 0x2B8                   20:     bra C, LOOP
+                                                  21:    
+                                                  22:    
+                                                  23:    .end
+                                                  24:    

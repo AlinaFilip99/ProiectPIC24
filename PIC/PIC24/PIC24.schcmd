@@ -1,0 +1,8 @@
+select figure at 1732 1350 16 -branches -sn=1
+select all in 1728 1326 1806 1346 -branches -enclosed -noattrwin -sn=1
+select figure at 4898 563 16 -branches -sn=1
+select figure at 4894 559 16 -branches -sn=1
+select figure at 4889 563 16 -branches -sn=1
+select figure at 4959 661 16 -branches -sn=1
+select figure at 4955 657 16 -branches -sn=1
+move wire at 4448 560 4960 560 to 4448 464 4960 464 -keepConn -sn=1

@@ -1,0 +1,6 @@
+[Inputs]
+Clk
+=New_PC[23:0]=
+[Outputs]
+=PC[23:0]=
+[BiDir]

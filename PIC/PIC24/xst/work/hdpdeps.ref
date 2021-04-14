@@ -1,0 +1,87 @@
+V3 59
+FL C:/Users/Alina/Desktop/PIC/PIC24/ALU.vhd 2021/01/14.13:59:31 J.40
+EN work/ALU 1610632327 FL C:/Users/Alina/Desktop/PIC/PIC24/ALU.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/STD_LOGIC_UNSIGNED 1192821033 \
+      PH ieee/NUMERIC_STD 1192821033
+AR work/ALU/Behavioral 1610632328 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/ALU.vhd EN work/ALU 1610632327
+FL C:/Users/Alina/Desktop/PIC/PIC24/ctrl.vhd 2021/01/11.19:58:53 J.40
+EN work/ctrl 1610632329 FL C:/Users/Alina/Desktop/PIC/PIC24/ctrl.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ctrl/Behavioral 1610632330 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/ctrl.vhd EN work/ctrl 1610632329
+FL C:/Users/Alina/Desktop/PIC/PIC24/DataMem.vhd 2020/12/10.20:33:51 J.40
+EN work/DataMem 1610632331 FL C:/Users/Alina/Desktop/PIC/PIC24/DataMem.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/DataMem/Behavioral 1610632332 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/DataMem.vhd EN work/DataMem 1610632331
+FL C:/Users/Alina/Desktop/PIC/PIC24/File_Regs.vhd 2021/01/11.20:50:01 J.40
+EN work/File_Regs 1610632337 FL C:/Users/Alina/Desktop/PIC/PIC24/File_Regs.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/File_Regs/Behavioral 1610632338 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/File_Regs.vhd EN work/File_Regs 1610632337
+FL C:/Users/Alina/Desktop/PIC/PIC24/Mux2V24.vhd 2021/01/11.20:43:13 J.40
+EN work/Mux2V24 1610632325 FL C:/Users/Alina/Desktop/PIC/PIC24/Mux2V24.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/Mux2V24/Behavioral 1610632326 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/Mux2V24.vhd EN work/Mux2V24 1610632325
+FL C:/Users/Alina/Desktop/PIC/PIC24/MUX2V5.vhd 2020/12/10.18:53:02 J.40
+EN work/MUX2V5 1610632323 FL C:/Users/Alina/Desktop/PIC/PIC24/MUX2V5.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/MUX2V5/Behavioral 1610632324 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/MUX2V5.vhd EN work/MUX2V5 1610632323
+FL C:/Users/Alina/Desktop/PIC/PIC24/MuxRdData2.vhd 2021/01/10.17:12:41 J.40
+EN work/MuxRdData2 1610291616 FL C:/Users/Alina/Desktop/PIC/PIC24/MuxRdData2.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/MuxRdData2/Behavioral 1610291617 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/MuxRdData2.vhd EN work/MuxRdData2 1610291616
+FL C:/Users/Alina/Desktop/PIC/PIC24/MUXWb.vhd 2020/11/25.17:37:27 J.40
+EN work/MUXWb 1610632321 FL C:/Users/Alina/Desktop/PIC/PIC24/MUXWb.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/MUXWb/Behavioral 1610632322 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/MUXWb.vhd EN work/MUXWb 1610632321
+FL C:/Users/Alina/Desktop/PIC/PIC24/PC_Update.vhd 2021/01/12.23:30:44 J.40
+EN work/PC_Update 1610632333 FL C:/Users/Alina/Desktop/PIC/PIC24/PC_Update.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/PC_Update/Behavioral 1610632334 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/PC_Update.vhd EN work/PC_Update 1610632333
+FL C:/Users/Alina/Desktop/PIC/PIC24/PIC24.vhf 2021/01/12.23:17:04 J.40
+EN work/PIC24 1610632372 FL C:/Users/Alina/Desktop/PIC/PIC24/PIC24.vhf \
+      PB ieee/std_logic_1164 1192821031 PH ieee/NUMERIC_STD 1192821033 LB UNISIM \
+      PH unisim/VCOMPONENTS 1194566982
+AR work/PIC24/BEHAVIORAL 1610632373 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/PIC24.vhf EN work/PIC24 1610632372 \
+      CP MUXWb CP MUX2V5 CP Mux2V24 CP ALU CP ctrl CP DataMem CP PC_Update CP ProgCnt \
+      CP File_Regs CP ROM32x24
+FL C:/Users/Alina/Desktop/PIC/PIC24/ProgCnt.vhd 2020/11/25.15:18:09 J.40
+EN work/ProgCnt 1610632335 FL C:/Users/Alina/Desktop/PIC/PIC24/ProgCnt.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ProgCnt/Behavioral 1610632336 \
+      FL C:/Users/Alina/Desktop/PIC/PIC24/ProgCnt.vhd EN work/ProgCnt 1610632335
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24.vhd 2020/11/25.15:14:53 J.40
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24_All.vhd 2021/01/13.10:20:38 J.40
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24_C.vhd 2021/01/13.00:35:22 J.40
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24_N.vhd 2021/01/13.01:07:07 J.40
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24_OV.vhd 2021/01/13.01:34:56 J.40
+FL C:/Users/Alina/Desktop/PIC/PIC24/ROM32x24_Z.vhd 2021/01/13.00:03:49 J.40
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_All.vhd 2021/01/14.15:51:55 J.40
+EN work/ROM32x24 1610632339 FL C:/Users/Alina/Desktop/PIC/ROM32x24_All.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ROM32x24/Behavioral 1610632340 \
+      FL C:/Users/Alina/Desktop/PIC/ROM32x24_All.vhd EN work/ROM32x24 1610632339
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_BraC.vhd 2021/01/14.14:35:18 J.40
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_BraN.vhd 2021/01/14.15:29:12 J.40
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_BraOV.vhd 2021/01/14.15:34:19 J.40
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_BraZ.vhd 2021/01/14.15:15:29 J.40
+FL C:/Users/Alina/Desktop/PIC/ROM32x24_Z.vhd 2021/01/11.23:03:12 J.40
+FL C:/Users/Alina/Desktop/ROM32x24_SpecNJ.vhd 2021/01/14.12:30:10 J.40
